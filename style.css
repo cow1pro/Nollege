@@ -10,6 +10,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 
@@ -75,7 +76,9 @@ button.white{
  }
 
 body {
+  height:100%;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 
@@ -344,6 +347,61 @@ outline: none;
   text-align: center;
 }
 
+nav h3{
+  display: flex;
+  align-items: center;
+  padding :20px 30px;
+  height: 50px;
+  font-family: arial;
+  font-size: 1.15em;
+}
+nav{
+  height:100%;
+  width:200px;
+  position: absolute;
+  position:fixed;
+  top:103px;
+  bottom: 0;
+  background-color: #088178;
+  border-radius: 2px;
+
+}
+
+nav ul{
+  position: relative;
+  list-style-type:none;
+}
+nav ul li a{
+  display: flex;
+  align-items: center;
+  font-family: arial;
+  font-size: 1.15em;
+  text-decoration: none;
+  text-transform: capitalize;
+  color:#000;
+  padding :10px 30px;
+  height: 50px;
+  transition: 0.5s ease;
+
+
+}
+
+nav ul li a:hover{
+background:#cce7d0;
+}
+
+nav ul ul{
+  position: absolute;
+  left:200px;
+  width:200px;
+  
+  top:0;
+  /* display: none; */
+  background:#465b52;
+
+}
+
+
 
 
 /*blog page*/
@@ -493,6 +551,7 @@ font-weight: 700;
   html, body {
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
   }
   
   #header{
@@ -538,3 +597,15 @@ font-weight: 700;
   text-align: center;
  }
 }
+
+.box{
+  width: 350px;
+  height: 350px;
+  display: inline-block;
+  margin-right: 60px;
+  margin-left: 85px;
+  margin-top: 50px;
+  border: 3px solid;
+  border-radius: 5px;
+}
+  
